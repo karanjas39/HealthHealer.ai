@@ -45,10 +45,11 @@ Don't get panic Just enter your OPENAI API Key in the input field and click on *
 
 ### Some Website ScreenShots
 
-![ss1](./CSS/IMAGES/README/ss1)
+![ss1](./CSS/IMAGES/README/ss1.png)
 
-![ss2](./CSS/IMAGES/README/ss2)
+![ss2](./CSS/IMAGES/README/ss2.png)
 
-![ss3](./CSS/IMAGES/README/ss3)
+![ss3](./CSS/IMAGES/README/ss3.png)
 
-![ss4](./CSS/IMAGES/README/ss4)
+![ss4](./CSS/IMAGES/README/ss4.png)
+
