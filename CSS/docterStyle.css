@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+  overflow-y: scroll; /* Show scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* HEader */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.292)),
+    url("./IMAGES/docters.jpg");
+  background-size: cover;
+  position: relative;
+}
+.upArrow {
+  position: fixed;
+  width: 30px;
+  bottom: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  right: 10px;
+  color: whitesmoke;
+  background-color: black;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.website-name {
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: 700;
+  color: whitesmoke;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+.links a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  position: relative;
+}
+.links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.links a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+header p {
+  width: 100%;
+  /* background-color: whitesmoke; */
+  color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+/* Section Departmenst */
+section h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+#departments {
+  width: 80%;
+  margin: 0 auto;
+}
+#departments p {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  animation-name: slideIn;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.department-list {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.department-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.department-list li {
+  margin: 20px;
+}
+
+.department-list a {
+  display: block;
+  background-color: #e9e9e9;
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.department-list a:hover {
+  background-color: #fff;
+}
+
+/* Section About Departments */
+.about-departments {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-departments p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.about-departments p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthHealer.ai</title>
+    <link rel="stylesheet" href="./CSS/indexStyle.css" />
+  </head>
+  <body onload="openModal()">
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Enter your OPENAI API Key</h2>
+        <input type="password" id="api-key-input" /><br />
+        <div class="modal-buttons">
+          <button onclick="storeApiKey()">Store API Key</button>
+          <button onclick="goToLink()">Know More</button>
+          <button onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+    <header id="top">
+      <a href="#top"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="upArrow"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18"
+          />
+        </svg>
+      </a>
+      <p class="quote">
+        Welcome to <strong>HealthHealer.ai</strong> - Your all-in-one Healthcare
+        platform powered by Artificial Intelligence!
+      </p>
+      <!-- Navigation -->
+      <nav>
+        <a href="./index.html" class="website-name">HealthHealer.ai</a>
+        <div class="links">
+          <a href="#mission">Our Mission</a>
+          <a href="#services">Services</a>
+          <a href="#" onclick="changeApiKey()">Change API Key</a>
+          <a href="#contact">Contact Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Article -->
+    <article>
+      <h2 id="mission">Our Mission</h2>
+      <div class="mission">
+        <p>
+          Health, doctors, workout, and medicine are all critical components of
+          a healthy lifestyle. Maintaining a healthy body and mind is essential
+          for leading a fulfilling and productive life. Yet, despite the
+          importance of these factors, many people struggle to find the time,
+          resources, and knowledge needed to properly care for themselves.
+          That's where websites like our come in - by offering AI-based tools
+          and resources to help people stay healthy and informed.
+        </p>
+        <p>
+          Doctors are the backbone of the medical profession, working tirelessly
+          to help diagnose and treat patients. They have years of training and
+          experience, which allows them to provide expert guidance and support
+          to those in need. However, not everyone has access to a doctor or the
+          ability to visit a medical facility on a regular basis. This is where
+          our website can be incredibly helpful. By providing access to AI-based
+          doctor, which is making it easier for people to receive medical advice
+          and recommendations from the comfort of their own homes.
+        </p>
+        <p>
+          Similarly, workout and exercise play a crucial role in maintaining
+          good health. Regular physical activity helps keep the body strong and
+          healthy, reduces the risk of disease, and promotes mental wellness.
+          Unfortunately, many people find it challenging to stick to a workout
+          routine, often due to a lack of motivation, time, or resources. Our
+          website can help by offering customized workout plans based on the
+          user's needs, preferences, and fitness level. This makes it easier for
+          people to stay active and achieve their fitness goals, even if they
+          don't have access to a gym or personal trainer.
+        </p>
+        <p>
+          When it comes to medicine, there is a wealth of information available
+          on the internet, but not all of it is reliable or accurate. Sorting
+          through the countless sources of information and determining what is
+          trustworthy can be overwhelming and time-consuming. Our website can
+          help by providing users with easy access to reliable information about
+          medicine, including details about medications, their uses, and
+          potential side effects. By having this information at their
+          fingertips, users can make more informed decisions about their health
+          and medication choices.
+        </p>
+        <p>
+          Overall, Our website is designed to make it easier for people to take
+          care of their health and well-being. Whether they need medical advice,
+          a customized workout plan, or reliable information about medicine, our
+          website provides a comprehensive and convenient solution. By
+          harnessing the power of AI and offering easy-to-use tools and
+          resources, we are helping people overcome the obstacles that often
+          prevent them from taking charge of their health.
+        </p>
+      </div>
+      <h2 id="services">Services</h2>
+      <div class="container">
+        <div class="docter-tab">
+          <img src="./CSS/IMAGES/docter.png" alt="dcoter" />
+          <p>
+            <strong>Doctor's Advice</strong>: Get personalized health advice
+            from AI based doctors, right from the comfort of your own home. Our
+            AI doctor is available 24/7 to provide medical advice and answer any
+            questions that it can.
+            <br />
+            <a href="./Docter-Section.html" class="links-to-buttons"
+              >Docter's Advice</a
+            >
+          </p>
+        </div>
+
+        <div class="diet-tab">
+          <p>
+            <strong>Personalized Meal Plans</strong>: Our AI-powered system
+            creates custom meal plans based on your health condition, dietary
+            preferences, and goals. Get delicious and healthy recipes,
+            nutritional information, and more.
+            <br />
+            <a href="./DietPlan-Section.html" class="links-to-buttons"
+              >Personalized Meal Plans</a
+            >
+          </p>
+          <img src="./CSS/IMAGES/vegetables.png" alt="vegetables" />
+        </div>
+
+        <div class="medicine-tab">
+          <img src="./CSS/IMAGES/medicineIndex.png" alt="medicine-pic" />
+          <p>
+            <strong>Medicine Information</strong>: Find detailed information
+            about any medicine, including dosage, side effects, and interactions
+            with other medications. <br />
+            <a href="./MedicineSearch-Section.html" class="links-to-buttons"
+              >Medicine Search</a
+            >
+          </p>
+        </div>
+
+        <div class="workout-tab">
+          <p>
+            <strong>Workouts and Exercise</strong>: Find personalized exercise
+            programs that meet your fitness goals, whether you want to build
+            muscle, lose weight, or improve your overall fitness.
+            <br />
+            <a
+              href="./WorkoutAndExerciseSearch-Section.html"
+              class="links-to-buttons"
+              >Fitness Programs</a
+            >
+          </p>
+          <img src="./CSS/IMAGES/workout-Index.png" alt="workout-img" />
+        </div>
+      </div>
+
+      <p class="last-para">
+        At HealthHealer.ai, we're committed to helping you stay healthy and
+        happy. Our platform is designed to make it easy for you to take care of
+        your health and get the support you need to achieve your wellness goals.
+        Sign up today and start your journey towards better health! At
+        HealthHealer.ai, we're committed to helping you stay healthy and happy.
+        Our platform is designed to make it easy for you to take care of your
+        health and get the support you need to achieve your wellness goals. Sign
+        up today and start your journey towards better health!
+      </p>
+    </article>
+    <!-- Contact us -->
+    <section id="contact" class="contact">
+      <div class="icons">
+        <h2>Contact Me</h2>
+        <div class="sendMail">
+          <img src="./CSS/IMAGES/mail.svg" class="meet" />
+          <p>dhillonjaskaran4486@gmail.com</p>
+        </div>
+        <div class="Call">
+          <img src="./CSS/IMAGES/phone.svg" class="meet" />
+          <p>+91 7347588266</p>
+        </div>
+      </div>
+
+      <form name="submit-to-google-sheets">
+        <input
+          type="text"
+          name="Name"
+          class="name"
+          placeholder="Your Name"
+        /><br />
+        <input
+          type="email"
+          name="Email"
+          class="email"
+          placeholder="Your E-Mail"
+        /><br />
+        <textarea
+          name="Message"
+          placeholder="Your Message"
+          class="message"
+          cols="30"
+          rows="5"
+        ></textarea
+        ><br />
+        <button type="submit" onclick="clearForm()">Submit</button>
+        <p class="submitMessage">Message sent successfully</p>
+      </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+      Copyright &copy; 2023 <strong>HealthHealer.ai</strong>. All rights
+      reserved. | Powered by OPENAI
+    </footer>
+    <!-- Contact Form -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzcaCwoN3dza_ngLLMGbok2-EMiOCAtMfI2bTYVHkNH0_oQv0zrmuEgU7lF1aGxp8si/exec";
+      const form = document.forms["submit-to-google-sheets"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!"))
+          .catch((error) => console.error(error.message));
+      });
+    </script>
+
+    <!-- Script -->
+    <script src="./JAVASCRIPT/indexScript.js"></script>
+    <!-- Medicine Section Bot -->
+    <script src="./JAVASCRIPT/medicineSearchScript.js"></script>
+    <!-- Docter Section Bots -->
+    <script src="./JAVASCRIPT/cardiologistScript.js"></script>
+    <script src="./JAVASCRIPT/DermatologyScript.js"></script>
+    <script src="./JAVASCRIPT/Gastroentrologist.js"></script>
+    <script src="./JAVASCRIPT/Gynocologist.js"></script>
+    <!-- Diet Plan Section -->
+    <script src="./JAVASCRIPT/DietBotScript.js"></script>
+    <script src="./JAVASCRIPT/RecipeGenieScript.js"></script>
+    <script src="./JAVASCRIPT/MealPlannerProScript.js"></script>
+    <script src="./JAVASCRIPT/NutriGuideScript.js"></script>
+    <!-- Workout Section bots -->
+    <script src="./JAVASCRIPT/MyFitnessPalScript.js"></script>
+    <script src="./JAVASCRIPT/NutriExperScript.js"></script>
+  </body>
+</html>

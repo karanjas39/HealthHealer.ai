@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Searcher</title>
+    <link rel="stylesheet" href="./CSS/medicineSearchStyle.css" />
+  </head>
+  <body>
+    <header id="top">
+      <a href="#top"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="upArrow"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18"
+          />
+        </svg>
+      </a>
+      <nav>
+        <a href="index.html" class="website-name">HealthHealer.ai</a>
+        <div class="links">
+          <a href="./index.html">Home</a>
+          <a href="#searchSectionStoper">Start Search</a>
+          <a href="#about">About Section</a>
+        </div>
+      </nav>
+      <p>
+        "Find accurate and reliable information about any medicine using our
+        user-friendly AI-based medicine search service."
+      </p>
+    </header>
+    <div id="searchSectionStoper"></div>
+    <article id="search" class="search">
+      <div class="input">
+        <input type="text" class="input-field" placeholder="Ask question" />
+        <button class="input-search-btn">Search</button>
+        <button class="history">History</button>
+        <button class="clearhistory">Clear History</button>
+      </div>
+
+      <img
+        src="./CSS/IMAGES/loader.svg"
+        class="loader hidden"
+        alt="loader icon"
+      />
+      <div class="answer-fetch-field">
+        Here the search results will be fetched
+      </div>
+    </article>
+    <article class="aboutSection">
+      <h2 id="about">Medicine Searcher</h2>
+      <p>
+        Welcome to our AI-based medicine search section! Here, you can easily
+        find information about any medicine that you want to know.
+      </p>
+      <p>
+        The Medicine Searcher section on our website provides users with
+        comprehensive information about various medications, including
+        indications, dosage, side effects, contraindications, precautions,
+        storage instructions, availability, and pricing. This information is
+        helpful for individuals who are looking for more information about a
+        medication they have been prescribed or for those who are considering
+        taking a new medication.
+      </p>
+      <p>
+        For example, if a user searches for the medication "Lisinopril," they
+        will be presented with information about the indications of the drug,
+        such as its use in the treatment of high blood pressure and heart
+        failure. They will also receive details about the recommended dosage,
+        the potential side effects of the medication, and any contraindications
+        or precautions that should be taken while taking it.
+      </p>
+      <p>
+        Additionally, the user will be informed about how the medication should
+        be stored, such as at room temperature or in a cool, dry place, and
+        whether it is available over-the-counter or by prescription only. The
+        pricing of the medication may also be displayed, depending on
+        availability and location.
+      </p>
+      <p>
+        It is important to note that users should only enter the name of a valid
+        medication when using the Medicine Searcher section. Entering the wrong
+        name could lead to inaccurate information being presented and could
+        potentially be harmful.
+      </p>
+      <p>
+        Overall, the Medicine Searcher section provides users with valuable
+        information that can help them make informed decisions about their
+        health and medications. By presenting information in a clear and concise
+        manner, users can quickly and easily access the information they need to
+        make the best decisions for their health.
+      </p>
+    </article>
+    <!-- Footer -->
+    <footer>
+      Copyright &copy; 2023 <strong>HealthHealer.ai</strong>. All rights
+      reserved. | Powered by OPENAI
+    </footer>
+    <!-- Script -->
+    <script src="./JAVASCRIPT/medicineSearchScript.js"></script>
+  </body>
+</html>

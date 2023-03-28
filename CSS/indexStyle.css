@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll; /* Show scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Modal Window */
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 45%;
+  margin: 50px auto;
+}
+.modal-content h2 {
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #2980b9;
+}
+.modal-content input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal-buttons button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #3498db;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.modal-buttons button:hover {
+  background-color: #2980b9;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.538), rgba(0, 0, 0, 0.816)),
+    url("./IMAGES/cover.jpg");
+  background-size: cover;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.website-name {
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.upArrow {
+  position: fixed;
+  width: 30px;
+  bottom: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  right: 10px;
+  color: whitesmoke;
+  background-color: #2b8a3e;
+}
+
+nav .links a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3px;
+  color: azure;
+  position: relative;
+  margin-right: 10px;
+}
+nav .links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+nav .links a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.quote {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+  color: azure;
+}
+
+/* Article */
+
+article {
+  padding: 10px;
+}
+
+article h2:first-child {
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #74b816;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#services {
+  margin: 10px 0;
+  font-size: 40px;
+  text-align: center;
+  color: #74b816;
+}
+.mission {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Services Links */
+.links-to-buttons {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #94d82d;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+.links-to-buttons:hover {
+  background-color: #a9e34b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.docter-tab,
+.diet-tab,
+.medicine-tab,
+.workout-tab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.container img {
+  height: 400px;
+}
+
+.last-para {
+  margin: 30px auto;
+  width: 90%;
+}
+
+/* Contact me */
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  min-height: max-content;
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #74b816;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+.sendMail,
+.Call {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.meet {
+  width: 40px;
+}
+
+/* Form */
+.name,
+.email,
+.message {
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(128, 128, 128, 0.261);
+}
+
+form button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: #74b816;
+  margin-left: 5px;
+  font-weight: 700;
+}
+form button:hover {
+  background-color: #a9e34b;
+}
+form button:active {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.submitMessage {
+  margin-top: 20px;
+  font-size: 18px;
+  display: none;
+  animation: fadeinout 5s;
+  color: #74b816;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Footer */
+footer {
+  margin: 5px;
+  text-align: center;
+}
