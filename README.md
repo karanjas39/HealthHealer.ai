@@ -4,6 +4,9 @@ Welcome to HealthHealer.ai - Your all-in-one Healthcare platform powered by Arti
 ### Overview
 The website is built using HTML, CSS, and JavaScript. Website is broadly divided into four main sections, including Doctor Advice's Section, Personalized Diet Plans Section, Medicine Information Section, and Workout and Nutrition Plans Section.Each Section consist of ChatBot which are powered by OPENAI API that generate results corresponding to User's need.
 
+### DEMO Video
+https://www.youtube.com/watch?v=FBj1WRb7LZw
+
 **Note**: The website is designed to run on wide screens, and is not be suitable for smaller screens.
 
 ### Installation
