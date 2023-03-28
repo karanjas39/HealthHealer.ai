@@ -68,7 +68,7 @@ function processUserInput() {
       }, 500);
     } else {
       const results = `A ${answers[2]} person of ${answers[1]} age living in ${answers[3]} have a ${answers[4]} as a preferred meal with ${answers[5]} as a preferred cuisine.The person have ${answers[6]} dietary restrictions or preferences.Now Suggest recipes that are easy to make, use common ingredients, and are tailored to person's specific dietary needs.Also provide nutritional information for each recipe, so I can make an informed decision about what he/she is eating.`;
-      console.log(results);
+      // console.log(results);
       fetchResults(results);
     }
   }

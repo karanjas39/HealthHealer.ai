@@ -169,7 +169,7 @@ function processUserInput() {
       Is there anything else that you'd like to share with us about your health history or current concerns: ${answers[33]}
       List all the possible Causes and suggest some lifestyle changes if needed as well as does he/she have any warning signs or symptoms that indicate he/she may require medical attention?
       `;
-      console.log(results);
+      // console.log(results);
       fetchResults(results);
     }
   }

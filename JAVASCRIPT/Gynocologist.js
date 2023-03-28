@@ -134,7 +134,7 @@ function processUserInput() {
       Do you have any other medical conditions that we should be aware of: ${answers[26]}
       Is there anything else you'd like to share with us about your health history or current concerns: ${answers[27]}
       Provide medical recommendations as per the above data.`;
-      console.log(results);
+      // console.log(results);
       fetchResults(results);
     }
   }
