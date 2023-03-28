@@ -17,6 +17,7 @@ Website is broadly divided in **4** parts:
 * Dermatology Department
 * Gastroentrology Department
 * Obstetrics and Gynecology Department
+* **More Sections coming soon...**
 2. Personalized Meal Plans
 * DietBot: Generates personalized diet plans tailored to unique preferences
 * MealPlannerPro: Creates customized meal plans based on schedule,budget,nutrition and much more
@@ -28,6 +29,26 @@ Website is broadly divided in **4** parts:
 
 User will interact with ChatBots and will get results as per their preferences.
 
-**Note** When user will first time enter the website, he/she will see a message like this:
+#### Steps to Navigate through Website
 
-![picture alt](http://via.placeholder.com/200x150)
+1. When user will first time open the website, he/she will see a message like this:
+
+![picture alt](./CSS/IMAGES/README/popupForAPIKey.png)
+
+Don't get panic Just enter your OPENAI API Key in the input field and click on **Store API Key**.If you don't know how to generate your Own OPENAI API Key,then click on **know more** button or watch this youtube tutorial https://www.youtube.com/watch?v=TE3rFhg0RdQ or visit OPENAI Website using this link https://platform.openai.com/account/api-keys.
+
+**Note** Once you generated your API key,Store it in safe place as once you copied it, you will not get chance to get it again. If you lost the key, then click on **Change API Key** Option in the website to update the new generated API Key. If you find any difficulty, feel free to contact us.
+
+2. Then you are free to navigate through each section of the website. You can track your OPENAI API Key usage through this link https://platform.openai.com/account/usage 
+
+3. If you have any query or facing any issue, feet free to Contact Us using Contact Us section of the website, or by sending an email to dhillonjaskaran4486@gmail.com.
+
+### Some Website ScreenShots
+
+![ss1](./CSS/IMAGES/README/ss1)
+
+![ss2](./CSS/IMAGES/README/ss2)
+
+![ss3](./CSS/IMAGES/README/ss3)
+
+![ss4](./CSS/IMAGES/README/ss4)
