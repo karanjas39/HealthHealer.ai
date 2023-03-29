@@ -40,13 +40,17 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
 }
 .website-name {
   font-size: 26px;
   text-decoration: none;
   font-weight: 700;
   color: whitesmoke;
+}
+.menuButton {
+  cursor: pointer;
+  display: none;
 }
 .links {
   display: flex;
@@ -168,4 +172,50 @@ article h2 {
 footer {
   margin: 5px;
   text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 860px) {
+  /* Header */
+  .website-name {
+    font-size: 20px;
+  }
+  nav .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    overflow-y: auto;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+  }
+  nav .links a {
+    margin-right: 0;
+  }
+  nav .hide {
+    display: none;
+  }
+  header p {
+    display: none;
+  }
+  header {
+    background-image: none;
+    background-color: black;
+    height: max-content;
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .allBots {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    font-size: 15px;
+  }
 }
