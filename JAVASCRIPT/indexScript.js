@@ -22,7 +22,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Open the modal dialog box
 function openModal() {
   const apiKey = localStorage.getItem("apiKey");
-  if (!apiKey) {
+  if (!apiKey || apiKey == "null" || apiKey == "") {
     const modal = document.getElementById("modal");
     modal.style.display = "block";
     document.body.style.overflow = "hidden"; // Disable scrolling on background
