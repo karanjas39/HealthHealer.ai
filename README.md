@@ -76,17 +76,6 @@ Don't get panic Just enter your OPENAI API Key in the input field and click on *
 </p>
 
 ### Some Mobile website ScreenShots
-<<<<<<< HEAD
-=======
-
-<p align="center">
-<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/1.jpg" width="150px">
-<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/2.jpg" width="150px">
-<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/3.jpg" width="150px">
-<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/4.jpg" width="150px">
-<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/5.jpg" width="150px">
-</p>
->>>>>>> 0facf91a5b6d2b4ac5fe9528d17239951fd8b928
 
 <p align="center">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/1.jpg" width="150px">
