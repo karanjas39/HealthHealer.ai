@@ -4,13 +4,21 @@ Welcome to HealthHealer.ai - Your all-in-one Healthcare platform powered by Arti
 ### Overview
 The website is built using HTML, CSS, and JavaScript. Website is broadly divided into four main sections, including Doctor Advice's Section, Personalized Diet Plans Section, Medicine Information Section, and Workout and Nutrition Plans Section.Each Section consist of a ChatBot powered by OPENAI API that generates results corresponding to the user's needs.
 
+Our website, healthHealer.ai, has the potential to contribute to several of the **United Nations' 17 Sustainable Development Goals (SDGs)**:
+
+* Good health and well-being (SDG 3): Our website can help people achieve and maintain good health by providing personalized medical recommendations, information on medications, diet planning, and personalized workout plans.
+* Zero hunger (SDG 2): By providing personalized diet planning, our website can help individuals achieve proper nutrition and reduce food waste.
+* Sustainable cities and communities (SDG 11): By offering online healthcare services, our website can help reduce the need for people to travel to healthcare facilities, which can help reduce carbon emissions and contribute to sustainable urban development.
+* Gender equality (SDG 5): Our website can help promote gender equality by providing healthcare services that are accessible to all, regardless of gender.
+* Industry, innovation, and infrastructure (SDG 9): Our website utilizes cutting-edge AI technology, which contributes to innovation and can help improve healthcare   infrastructure.
+
 ### DEMO Video
 https://www.youtube.com/watch?v=FBj1WRb7LZw
 
-**Note**: The website is designed to run on wide screens, and may not be suitable for smaller screens.
+**Note**: The website is designed to run on both wide screens as well as smaller screens 😊
 
 ### Installation
-To run the website, you need to clone the repository into your machine and run the index.html file.Make sure you are using the updated version of the browser, otherwise some of the functionalities may not work.
+To run the website, you need to clone the repository into your machine and run the index.html file.
 
 ### Usage
 Website is broadly divided in **4** parts:
