@@ -39,10 +39,17 @@ header {
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
 }
 
+.menuButton {
+  width: 20px;
+  height: max-content;
+  cursor: pointer;
+  display: none;
+}
 .website-name {
   font-size: 26px;
   text-decoration: none;
@@ -129,7 +136,7 @@ img {
   gap: 10px;
 }
 .input-field {
-  width: 20%;
+  width: 40%;
   padding: 10px;
   border-radius: 20px;
   outline: none;
@@ -194,4 +201,65 @@ img {
 footer {
   margin: 5px;
   text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 860px) {
+  /* Header */
+  .website-name {
+    font-size: 20px;
+  }
+  nav .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    overflow-y: auto;
+    background-color: #2b8a3e;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+  }
+  nav .links a {
+    margin-right: 0;
+  }
+  nav .hide {
+    display: none;
+  }
+  header p {
+    display: none;
+  }
+  header {
+    background-image: none;
+    background-color: #2b8a3e;
+    height: max-content;
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .input-field {
+    grid-column: 1/-1;
+    width: 70%;
+    justify-self: center;
+  }
+
+  footer {
+    font-size: 15px;
+  }
 }

@@ -3,6 +3,13 @@
 const engine = "text-davinci-003";
 let numsearches = 0;
 let answerCache = [];
+const linksNavBar = document.querySelector(".links");
+const menuButton = document.querySelector("nav .menuButton");
+
+// To show ot hide nav bar
+menuButton.addEventListener("click", function () {
+  linksNavBar.classList.toggle("hide");
+});
 
 // Smooth Scrooling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

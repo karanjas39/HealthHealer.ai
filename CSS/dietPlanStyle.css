@@ -199,6 +199,7 @@ footer {
     border-bottom-right-radius: 10px;
     z-index: 10;
     text-align: center;
+    padding: 10px;
   }
   nav .links a {
     margin-right: 0;
