@@ -124,9 +124,7 @@ nav {
   color: whitesmoke;
   background-color: #2b8a3e;
 }
-.hide {
-  display: inline-block;
-}
+
 nav .links a {
   display: inline-block;
   text-decoration: none;

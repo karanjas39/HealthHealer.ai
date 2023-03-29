@@ -40,13 +40,16 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
 }
 .website-name {
   font-size: 26px;
   text-decoration: none;
   font-weight: 700;
   color: whitesmoke;
+}
+.menuButton {
+  display: none;
 }
 .links {
   display: flex;
@@ -80,7 +83,7 @@ header p {
   color: whitesmoke;
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
@@ -174,4 +177,47 @@ section h2 {
 footer {
   margin-top: 10px;
   text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 860px) {
+  /* Header */
+  .website-name {
+    font-size: 20px;
+  }
+  nav .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    overflow-y: auto;
+    background-color: #333;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    text-align: center;
+  }
+  nav .links a {
+    margin-right: 0;
+  }
+  nav .hide {
+    display: none;
+  }
+  header p {
+    display: none;
+  }
+  header {
+    background-image: none;
+    background-color: #333;
+    height: max-content;
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  footer {
+    font-size: 10px;
+  }
 }
