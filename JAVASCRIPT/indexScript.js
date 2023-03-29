@@ -9,6 +9,16 @@ menuButton.addEventListener("click", function () {
   linksNavBar.classList.toggle("hide");
 });
 
+// Smooth Scrooling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document
+      .querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 // Open the modal dialog box
 function openModal() {
   const apiKey = localStorage.getItem("apiKey");
