@@ -44,7 +44,7 @@ User will interact with ChatBots and get results as per their preferences.
 
 1. When the user first opens the website, they will see a message like this:
 
-![picture alt](./CSS/IMAGES/README/popupForAPIKey.png)
+<p align="center"><img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/popupForAPIKey.png" width="500px"></p>
 
 Don't get panic Just enter your OPENAI API Key in the input field and click on **Store API Key**.If you don't know how to generate your own OPENAI API Key,then click on **know more** button or watch this YouTube tutorial https://www.youtube.com/watch?v=TE3rFhg0RdQ or visit OPENAI Website using this link https://platform.openai.com/account/api-keys.
 
@@ -56,20 +56,21 @@ Don't get panic Just enter your OPENAI API Key in the input field and click on *
 
 ### Some Website ScreenShots
 
-![ss1](./CSS/IMAGES/README/ss1.png)
-
-![ss2](./CSS/IMAGES/README/ss2.png)
-
-![ss3](./CSS/IMAGES/README/ss3.png)
-
-![ss4](./CSS/IMAGES/README/ss4.png)
+<p>
+<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss1.png" width="500px">
+<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss2.png" width="500px">
+</p>
+<p align="center">
+<img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss3.png" width="500px">
+</p>
 
 ### Some Mobile website ScreenShots
 
+<p align="center">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/1.jpg" width="150px">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/2.jpg" width="150px">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/3.jpg" width="150px">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/4.jpg" width="150px">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README-MOBILE-SS/5.jpg" width="150px">
-
+</p>
 
