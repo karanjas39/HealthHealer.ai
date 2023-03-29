@@ -124,7 +124,9 @@ nav {
   color: whitesmoke;
   background-color: #2b8a3e;
 }
-
+.hide {
+  display: inline-block;
+}
 nav .links a {
   display: inline-block;
   text-decoration: none;
@@ -160,6 +162,10 @@ nav .links a:hover::before {
   text-align: center;
   font-size: 32px;
   color: azure;
+}
+.menuButton {
+  cursor: pointer;
+  display: none;
 }
 
 /* Article */
@@ -323,4 +329,63 @@ form button:active {
 footer {
   margin: 5px;
   text-align: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 860px) {
+  /* Header */
+  .website-name {
+    font-size: 20px;
+  }
+  nav .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 100%;
+    overflow-y: auto;
+    background-color: #94d82d;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 10;
+    text-align: center;
+  }
+  nav .links a {
+    margin-right: 0;
+  }
+  nav .hide {
+    display: none;
+  }
+  .quote {
+    display: none;
+  }
+  header {
+    background-image: none;
+    background-color: #94d82d;
+    height: max-content;
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .container img {
+    display: none;
+  }
+  .docter-tab,
+  .diet-tab,
+  .medicine-tab,
+  .workout-tab {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  footer {
+    font-size: 10px;
+  }
 }

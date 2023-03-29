@@ -1,6 +1,13 @@
 "use strict";
 
 const submitMessage = document.querySelector(".submitMessage");
+const linksNavBar = document.querySelector(".links");
+const menuButton = document.querySelector("nav .menuButton");
+
+// To show ot hide nav bar
+menuButton.addEventListener("click", function () {
+  linksNavBar.classList.toggle("hide");
+});
 
 // Open the modal dialog box
 function openModal() {
