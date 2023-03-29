@@ -367,6 +367,17 @@ footer {
   .menuButton {
     display: block;
   }
+  .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .modal-buttons button {
+    font-size: 12px;
+  }
+  .modal-content h2 {
+    font-size: 15px;
+  }
   .container img {
     display: none;
   }
