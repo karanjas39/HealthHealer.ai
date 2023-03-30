@@ -3,6 +3,15 @@
 const submitMessage = document.querySelector(".submitMessage");
 const linksNavBar = document.querySelector(".links");
 const menuButton = document.querySelector("nav .menuButton");
+const navLinks = document.querySelectorAll(".links a");
+
+// Add click event listeners to all the navigation links
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    // hide the menu bar
+    linksNavBar.classList.add("hide");
+  });
+});
 
 // To show ot hide nav bar
 menuButton.addEventListener("click", function () {
@@ -45,11 +54,20 @@ function storeApiKey() {
 
 // Change the API key stored in local storage
 function changeApiKey() {
-  const newApiKey = prompt("Enter new API Key");
-  if (newApiKey != "") {
-    localStorage.setItem("apiKey", newApiKey);
+  const apiKey = localStorage.getItem("apiKey");
+  // Check if API key is already present in localStorage
+  if (apiKey === null) {
+    // If not present, prompt user to add a key
+    const newApiKey = prompt("No key is added, please add the proper key.");
+    if (newApiKey !== null && newApiKey.trim() !== "") {
+      localStorage.setItem("apiKey", newApiKey);
+    }
   } else {
-    changeApiKey();
+    // If present, allow user to change the key
+    const newApiKey = prompt("Enter new API Key");
+    if (newApiKey !== null && newApiKey.trim() !== "") {
+      localStorage.setItem("apiKey", newApiKey);
+    }
   }
 }
 
