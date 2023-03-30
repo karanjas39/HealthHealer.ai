@@ -67,13 +67,10 @@ Don't get panic Just enter your OPENAI API Key in the input field and click on *
 
 ### Some Website ScreenShots
 
-<p>
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss1.png" width="500px">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss2.png" width="500px">
-</p>
-<p align="center">
 <img src="https://github.com/karanjas39/HealthHealer.ai/blob/master/CSS/IMAGES/README/ss3.png" width="500px">
-</p>
+
 
 ### Some Mobile website ScreenShots
 
