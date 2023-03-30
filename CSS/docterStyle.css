@@ -185,6 +185,16 @@ footer {
   .website-name {
     font-size: 20px;
   }
+  nav {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    width: 100%;
+  }
+  #departments,
+  #about-departments {
+    padding-top: 44px;
+  }
   nav .links {
     position: absolute;
     display: flex;
