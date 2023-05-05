@@ -275,7 +275,12 @@ article p {
 .docter-tab,
 .diet-tab,
 .medicine-tab,
-.workout-tab,
+.workout-tab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
 .ayurveda-tab {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
