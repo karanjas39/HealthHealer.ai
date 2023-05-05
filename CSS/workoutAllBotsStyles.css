@@ -207,18 +207,18 @@ nav {
   nav .links a {
     color: whitesmoke;
   }
-  .result,
+  /* .result,
   .chat-container-1 {
     background-color: transparent;
-  }
+  } */
   .result {
-    width: 85%;
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 620px) {
-  .chat-container-1 {
-    width: 80%;
+  .chat-container {
+    width: 90%;
   }
   nav {
     position: relative;
