@@ -2,7 +2,7 @@
 
 const chatHistory = document.querySelector(".chat-history");
 const chatInput = document.querySelector(".chat-input");
-const chatContainer = document.querySelector(".chat-container-4");
+const chatContainer = document.querySelector(".chat-container");
 const resultContainer = document.querySelector(".result");
 const loader = document.querySelector(".loader");
 const searchAgain = document.querySelector(".search-again");
@@ -202,4 +202,20 @@ clearHistory.addEventListener("click", function () {
     resultContainer.insertAdjacentHTML("afterbegin", "History deleted");
   }
   searchHistory = [];
+});
+
+const linksNavBar = document.querySelector(".links");
+const menuButton = document.querySelector("nav .menuButton");
+const navLinks = document.querySelectorAll(".links a");
+
+// Add click event listeners to all the navigation links
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    // hide the menu bar
+    linksNavBar.classList.add("hide");
+  });
+});
+// To show ot hide nav bar
+menuButton.addEventListener("click", function () {
+  linksNavBar.classList.toggle("hide");
 });

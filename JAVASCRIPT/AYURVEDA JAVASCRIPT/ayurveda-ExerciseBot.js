@@ -17,15 +17,16 @@ let searchHistory = [];
 let searchNumber = 0;
 const botMessages = [
   `What is your name?`,
-  `What is your age ${userName}?`,
-  `What is your gender ${userName}?`,
-  `What unit of height you will prefer ${userName}? (Options: cm, feet, inches)`,
-  `What unit of weight you will prefer ${userName}? (Options: kg, lbs)`,
-  `What is your height ${userName}?`,
-  `What is your weight ${userName}?`,
-  `What is your activity level ${userName}? (Options: sedentary, lightly active, moderately active, very active)`,
-  `What are your fitness goals ${userName}? (Options: lose weight, maintain weight, gain weight)`,
-  `Do you have any dietary restrictions or preferences ${userName}? (Options: vegetarian, vegan, gluten-free, dairy-free, none)`,
+  `What is your age?`,
+  `What is your gender?`,
+  `What is your body type? (Options: Vata, Pitta, Kapha, Don't know)`,
+  `What is your level of experience with meditation and yoga? (Options: Beginner, Intermediate, Advanced)`,
+  `What type of yoga practice are you interested in? (Options: Hatha, Vinyasa, Restorative, Kundalini, Not sure)`,
+  `What are your primary goals for meditation and yoga practice? (Options: Relaxation and stress relief, Improved flexibility and mobility, Strength and endurance, Mind-body connection and spiritual growth, Not sure)`,
+  `What is your preferred time of day for meditation and yoga practice? (Options: Morning, Afternoon, Evening)`,
+  `Do you have any physical limitations or health concerns that may affect your practice? (Describe if yes/no)`,
+  `How often do you plan to practice meditation and yoga? (Options: Daily, Several times per week, Once per week, Less often)`,
+  `Do you have any specific preferences for meditation or yoga techniques? (Describe if yes/no)`,
 ];
 let currentBotMessageIndex = 0;
 let userData = {};
@@ -70,22 +71,23 @@ function processUserInput() {
         addMessageToHistory(message, "bot");
       }, 500);
     } else {
-      const results = `For a ${answers[1]}-year-old ${answers[2]} with a ${answers[7]} lifestyle looking to ${answers[8]}, create a personalized meal plan that takes into account your dietary preferences and restrictions (${answers[9]}) and supports your ${answers[8]} goals. Your preferred unit of height is ${answers[3]} and your preferred unit of weight is ${answers[4]}. You stand at ${answers[5]} ${answers[3]} tall and weigh ${answers[6]} ${answers[4]}. The meal plan should be sustainable and enjoyable, with adjustments made based on your feedback.`;
-      // console.log(results);
+      const results = `Based on the following data, Please provide recommendations for meditation and yoga practices according to Ayurvedic principles. Include specific practices, duration, frequency, and any other relevant information.
+      Data: 
+      What is your age: ${answers[1]}
+      What is your gender: ${answers[2]}
+      What is your body type: ${answers[3]}
+      What is your level of experience with meditation and yoga: ${answers[4]}
+      What type of yoga practice are you interested in: ${answers[5]}
+      What are your primary goals for meditation and yoga practice: ${answers[6]}
+      What is your preferred time of day for meditation and yoga practice: ${answers[7]}
+      Do you have any physical limitations or health concerns that may affect your practice: ${answers[8]}
+      How often do you plan to practice meditation and yoga: ${answers[9]}
+      Do you have any specific preferences for meditation or yoga techniques: ${answers[10]}`;
+      console.log(results);
       fetchResults(results);
     }
   }
 }
-
-// Previous Literal
-/*Suggest healthy meal options and snacks that fit the my mentioned preferences and goals and also provide nutritional information for different foods and suggest substitutions or alternatives that would be better suited for the my dietary needs as per following data:
-      My Age: ${answers[1]}
-      My Gender: ${answers[2]}
-      My Height: ${answers[5]} ${answers[3]}
-      My Weight: ${answers[6]} ${answers[4]}
-      My Activity Level: ${answers[7]}
-      My Fitness Goals: ${answers[8]}
-      My Dietary Restrictions or Preferences: ${answers[9]}*/
 
 chatInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
@@ -168,9 +170,9 @@ searchAgain.addEventListener("click", function () {
   answers = [];
   chatHistory.innerHTML = "";
   const messageContainer = document.createElement("div");
-  messageContainer.innerHTML = `Hi there! I'm Diet Bot, an AI-powered chatbot here to help you
-  achieve your health goals by creating personalized diet plans
-  tailored to your unique needs and preferences.
+  messageContainer.innerHTML = `Hi there! I'm Ayurvedic meditation and yoga recommender, here to
+  provide personalized meditation and yoga practices based on body
+  type and health goals.
   <br /><br />
   What's your name?`;
   chatHistory.appendChild(messageContainer);

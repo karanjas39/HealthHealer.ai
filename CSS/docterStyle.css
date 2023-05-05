@@ -60,6 +60,7 @@ nav {
   color: whitesmoke;
   font-size: 18px;
   position: relative;
+  padding-bottom: 3px;
 }
 .links a:before {
   content: "";
@@ -131,12 +132,15 @@ section h2 {
 }
 
 .department-list ul {
+  text-align: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .department-list li {
@@ -179,17 +183,49 @@ footer {
   text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .department-list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Media Queries */
 @media only screen and (max-width: 860px) {
+  /* Links hovering */
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
+  .upArrow {
+    background-color: #1864ab;
+  }
+  /* Section */
+  section h2,
+  section p strong,
+  .department-list ul li a,
+  .parah {
+    color: #1864ab;
+  }
   /* Header */
   .website-name {
     font-size: 20px;
   }
   nav {
     position: fixed;
-    background-color: black;
+    background-color: #1864ab;
     top: 0;
     width: 100%;
+    z-index: 100;
   }
   #departments,
   #about-departments {
@@ -202,7 +238,7 @@ footer {
     right: 0;
     top: 100%;
     overflow-y: auto;
-    background-color: #333;
+    background-color: #1864ab;
     padding: 5px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -230,5 +266,8 @@ footer {
   }
   footer {
     font-size: 15px;
+  }
+  .department-list ul {
+    grid-template-columns: 1fr;
   }
 }

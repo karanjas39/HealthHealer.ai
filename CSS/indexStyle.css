@@ -124,6 +124,7 @@ nav {
   right: 10px;
   color: whitesmoke;
   background-color: #2b8a3e;
+  z-index: 100;
 }
 
 nav .links a {
@@ -274,7 +275,8 @@ article p {
 .docter-tab,
 .diet-tab,
 .medicine-tab,
-.workout-tab {
+.workout-tab,
+.ayurveda-tab {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -332,6 +334,9 @@ article p {
   outline: none;
   background-color: rgba(128, 128, 128, 0.261);
 }
+.message {
+  resize: none;
+}
 
 form button {
   padding: 5px 15px;
@@ -382,6 +387,22 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 860px) {
+  /* Links hovering */
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
+
   /* Header */
   .website-name {
     font-size: 20px;
@@ -436,6 +457,12 @@ footer {
     flex-direction: column;
     gap: 5px;
   }
+  .modal-buttons button:first-child {
+    margin-bottom: 20px;
+  }
+  .modal-content input {
+    margin-bottom: 5px;
+  }
   .modal-buttons button {
     font-size: 12px;
   }
@@ -448,7 +475,8 @@ footer {
   .docter-tab,
   .diet-tab,
   .medicine-tab,
-  .workout-tab {
+  .workout-tab,
+  .ayurveda-tab {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;

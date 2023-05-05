@@ -25,8 +25,8 @@
         /><br />
         <div class="modal-buttons">
           <button onclick="storeApiKey()">Store API Key</button>
-          <button onclick="goToLink()">Know More</button>
-          <button onclick="closeModal()">Close</button>
+          <button onclick="getApiKey()">Get API Key</button>
+          <button onclick="goToLink()">Get Help</button>
         </div>
       </div>
     </div>
@@ -71,14 +71,18 @@
     <!-- Slide show -->
     <div class="slideshow-container">
       <div class="slide active">
-        <img src="./CSS/IMAGES/small4.jpg" />
+        <a href="./Docter-Section.html"
+          ><img src="./CSS/IMAGES/small4.jpg"
+        /></a>
         <div class="slide-text">
           <h3>Docter's Advice</h3>
           <p>Get personalized health advice from AI based doctors</p>
         </div>
       </div>
       <div class="slide">
-        <img src="./CSS/IMAGES/small2.jpg" />
+        <a href="./DietPlan-Section.html">
+          <img src="./CSS/IMAGES/small2.jpg" />
+        </a>
         <div class="slide-text">
           <h3>Personalized Meal Plans</h3>
           <p>
@@ -88,7 +92,9 @@
         </div>
       </div>
       <div class="slide">
-        <img src="./CSS/IMAGES/small3.jpg" />
+        <a href="./MedicineSearch-Section.html">
+          <img src="./CSS/IMAGES/small3.jpg" />
+        </a>
         <div class="slide-text">
           <h3>Medicine Information</h3>
           <p>
@@ -98,12 +104,26 @@
         </div>
       </div>
       <div class="slide">
-        <img src="./CSS/IMAGES/small1.jpg" />
+        <a href="./WorkoutAndExerciseSearch-Section.html">
+          <img src="./CSS/IMAGES/small1.jpg" />
+        </a>
         <div class="slide-text">
           <h3>Workouts and Nutrition</h3>
           <p>
             Find personalized exercise and nutrition that meet your fitness
             goals
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <a href="./ayurveda-Section.html">
+          <img src="./CSS/IMAGES/small5.jpg" />
+        </a>
+        <div class="slide-text">
+          <h3>Ayurved Chikitsa</h3>
+          <p>
+            Find personalized diagnosis, remedies and much more based on
+            Ayurvedic principles.
           </p>
         </div>
       </div>
@@ -120,7 +140,8 @@
           importance of these factors, many people struggle to find the time,
           resources, and knowledge needed to properly care for themselves.
           That's where websites like our come in - by offering AI-based tools
-          and resources to help people stay healthy and informed.
+          powered by OPENAI and resources to help people stay healthy and
+          informed.
         </p>
         <p>
           Doctors are the backbone of the medical profession, working tirelessly
@@ -155,13 +176,14 @@
           and medication choices.
         </p>
         <p>
-          Overall, Our website is designed to make it easier for people to take
-          care of their health and well-being. Whether they need medical advice,
-          a customized workout plan, or reliable information about medicine, our
-          website provides a comprehensive and convenient solution. By
-          harnessing the power of AI and offering easy-to-use tools and
-          resources, we are helping people overcome the obstacles that often
-          prevent them from taking charge of their health.
+          Our Ayurveda section provides a comprehensive solution to individuals
+          seeking natural remedies and personalized health recommendations. Our
+          platform aims to promote the practice of Ayurveda, an ancient holistic
+          healing system, and its benefits for the mind, body, and spirit. We
+          strive to offer the most accurate and helpful information by utilizing
+          OpenAI to generate the best possible results. With our platform, users
+          can take a proactive approach to their health and achieve optimal
+          well-being through natural means.
         </p>
       </div>
       <h2 id="services">Services</h2>
@@ -220,17 +242,28 @@
           </p>
           <img src="./CSS/IMAGES/workout-Index.png" alt="workout-img" />
         </div>
+        <div class="ayurveda-tab">
+          <img src="./CSS/IMAGES/ayurveda-main.png" alt="ayurveda-img" />
+          <p>
+            <strong>Ayurved Chikitsa</strong>: Find personalized diagnosis,
+            remedies, lifestyle, ayurvedic medicine encyclopedia, recipe
+            generator and yoga/meditation based on Ayurvedic principles.
+            <br />
+            <a href="./ayurveda-Section.html" class="links-to-buttons"
+              >Ayurvedic Corner</a
+            >
+          </p>
+        </div>
       </div>
 
       <p class="last-para">
         At HealthHealer.ai, we're committed to helping you stay healthy and
         happy. Our platform is designed to make it easy for you to take care of
         your health and get the support you need to achieve your wellness goals.
-        Sign up today and start your journey towards better health! At
+        Join us today and start your journey towards better health! At
         HealthHealer.ai, we're committed to helping you stay healthy and happy.
         Our platform is designed to make it easy for you to take care of your
-        health and get the support you need to achieve your wellness goals. Sign
-        up today and start your journey towards better health!
+        health and get the support you need to achieve your wellness goals.
       </p>
     </article>
     <!-- Contact us -->
@@ -289,20 +322,5 @@
 
     <!-- Script -->
     <script src="./JAVASCRIPT/indexScript.js"></script>
-    <!-- Medicine Section Bot -->
-    <script src="./JAVASCRIPT/medicineSearchScript.js"></script>
-    <!-- Docter Section Bots -->
-    <script src="./JAVASCRIPT/cardiologistScript.js"></script>
-    <script src="./JAVASCRIPT/DermatologyScript.js"></script>
-    <script src="./JAVASCRIPT/Gastroentrologist.js"></script>
-    <script src="./JAVASCRIPT/Gynocologist.js"></script>
-    <!-- Diet Plan Section -->
-    <script src="./JAVASCRIPT/DietBotScript.js"></script>
-    <script src="./JAVASCRIPT/RecipeGenieScript.js"></script>
-    <script src="./JAVASCRIPT/MealPlannerProScript.js"></script>
-    <script src="./JAVASCRIPT/NutriGuideScript.js"></script>
-    <!-- Workout Section bots -->
-    <script src="./JAVASCRIPT/MyFitnessPalScript.js"></script>
-    <script src="./JAVASCRIPT/NutriExperScript.js"></script>
   </body>
 </html>

@@ -17,15 +17,14 @@ let searchHistory = [];
 let searchNumber = 0;
 const botMessages = [
   `What is your name?`,
-  `What is your age ${userName}?`,
-  `What is your gender ${userName}?`,
-  `What unit of height you will prefer ${userName}? (Options: cm, feet, inches)`,
-  `What unit of weight you will prefer ${userName}? (Options: kg, lbs)`,
-  `What is your height ${userName}?`,
-  `What is your weight ${userName}?`,
-  `What is your activity level ${userName}? (Options: sedentary, lightly active, moderately active, very active)`,
-  `What are your fitness goals ${userName}? (Options: lose weight, maintain weight, gain weight)`,
-  `Do you have any dietary restrictions or preferences ${userName}? (Options: vegetarian, vegan, gluten-free, dairy-free, none)`,
+  `What is your age?`,
+  `What is your gender?`,
+  `What is your body type? (Options: Vata, Pitta, Kapha, Don't know)`,
+  `What is your current health concern?`,
+  `How long have you been experiencing this health concern?`,
+  `Have you tried any herbal remedies before? (List if yes/no)`,
+  `Are you currently taking any other medication? (List if yes/no)`,
+  `Are you allergic to any herbs or plants? (List if yes/no)`,
 ];
 let currentBotMessageIndex = 0;
 let userData = {};
@@ -70,22 +69,21 @@ function processUserInput() {
         addMessageToHistory(message, "bot");
       }, 500);
     } else {
-      const results = `For a ${answers[1]}-year-old ${answers[2]} with a ${answers[7]} lifestyle looking to ${answers[8]}, create a personalized meal plan that takes into account your dietary preferences and restrictions (${answers[9]}) and supports your ${answers[8]} goals. Your preferred unit of height is ${answers[3]} and your preferred unit of weight is ${answers[4]}. You stand at ${answers[5]} ${answers[3]} tall and weigh ${answers[6]} ${answers[4]}. The meal plan should be sustainable and enjoyable, with adjustments made based on your feedback.`;
+      const results = `Generate a list of herbal remedies as per given data based on Ayurvedic principles. Include the name of the herb, its medicinal properties, and how it can be used for treatment.
+      Data:
+      What is your age: ${answers[1]} 
+      What is your gender: ${answers[2]}
+      What is your body type: ${answers[3]}
+      What is your current health concern: ${answers[4]} 
+      How long have you been experiencing this health concern: ${answers[5]}  
+      Have you tried any herbal remedies before: ${answers[6]}
+      Are you currently taking any other medication: ${answers[7]}
+      Are you allergic to any herbs or plants: ${answers[8]}`;
       // console.log(results);
       fetchResults(results);
     }
   }
 }
-
-// Previous Literal
-/*Suggest healthy meal options and snacks that fit the my mentioned preferences and goals and also provide nutritional information for different foods and suggest substitutions or alternatives that would be better suited for the my dietary needs as per following data:
-      My Age: ${answers[1]}
-      My Gender: ${answers[2]}
-      My Height: ${answers[5]} ${answers[3]}
-      My Weight: ${answers[6]} ${answers[4]}
-      My Activity Level: ${answers[7]}
-      My Fitness Goals: ${answers[8]}
-      My Dietary Restrictions or Preferences: ${answers[9]}*/
 
 chatInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
@@ -168,9 +166,9 @@ searchAgain.addEventListener("click", function () {
   answers = [];
   chatHistory.innerHTML = "";
   const messageContainer = document.createElement("div");
-  messageContainer.innerHTML = `Hi there! I'm Diet Bot, an AI-powered chatbot here to help you
-  achieve your health goals by creating personalized diet plans
-  tailored to your unique needs and preferences.
+  messageContainer.innerHTML = `Hi there! I'm Herbal remedies recommender, an AI-powered chatbot here
+  to provide recommendations on herbs for specific health conditions
+  and body type.
   <br /><br />
   What's your name?`;
   chatHistory.appendChild(messageContainer);

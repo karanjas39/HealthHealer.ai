@@ -14,7 +14,6 @@ body {
       rgba(255, 255, 255, 0.216)
     ),
     url("./IMAGES/docterBotsCover.jpg");
-  height: 100%;
   background-size: cover;
   background-attachment: fixed;
   overflow-y: auto;
@@ -24,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 50px);
+  margin-bottom: 20px;
 }
 .result {
   width: 700px;
@@ -34,7 +33,6 @@ body {
   border: 1px solid white;
   padding: 20px;
   margin: 10px auto;
-  /* background-color: #eeeeeedd; */
 }
 .loader {
   position: absolute;
@@ -44,8 +42,7 @@ body {
   width: 100px;
 }
 nav {
-  top: 0;
-  width: 80%;
+  padding: 10px;
   height: 50px;
   display: flex;
   margin: 0 auto;
@@ -69,6 +66,7 @@ nav {
   color: black;
   font-size: 18px;
   position: relative;
+  padding-bottom: 3px;
 }
 .links a:before {
   content: "";
@@ -86,7 +84,13 @@ nav {
   visibility: visible;
   transform: scaleX(1);
 }
+
 .hidden {
+  display: none;
+}
+
+.menuButton {
+  cursor: pointer;
   display: none;
 }
 
@@ -98,7 +102,6 @@ nav {
   border: 1px solid white;
   border-radius: 5px;
   border-radius: 30px;
-  /* background-color: #eeeeee; */
 }
 
 .chat-header {
@@ -172,5 +175,76 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .result {
+    background-color: #eeeeeedd;
+  }
+  .chat-container-1 {
+    background-color: #eeeeeedd;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
+  body {
+    background-image: none;
+    background-color: #d0ebff;
+  }
+  nav {
+    background-color: #1971c2;
+  }
+  nav .website-name,
+  nav .links a {
+    color: whitesmoke;
+  }
+  .result,
+  .chat-container-1 {
+    background-color: transparent;
+  }
+  .result {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .chat-container-1 {
+    width: 80%;
+  }
+  nav {
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .links {
+    position: absolute;
+    width: max-content;
+    flex-direction: column;
+    background-color: #1971c2;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    z-index: 100;
+    box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.127);
   }
 }

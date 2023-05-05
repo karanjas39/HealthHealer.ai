@@ -17,12 +17,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* HEader */
 header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.714), rgba(0, 0, 0, 0.292)),
-    url("./IMAGES/VegetablesInCircle.jpg");
+    url("./IMAGES/ayurveda-medicineDictionary-image.jpg");
   background-size: cover;
   position: relative;
 }
@@ -37,10 +36,19 @@ header {
   background-color: #2b8a3e;
   z-index: 1;
 }
+
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+
+.menuButton {
+  width: 20px;
+  height: max-content;
+  cursor: pointer;
+  display: none;
 }
 .website-name {
   font-size: 26px;
@@ -48,6 +56,7 @@ nav {
   font-weight: 700;
   color: whitesmoke;
 }
+
 .links {
   display: flex;
   gap: 12px;
@@ -57,7 +66,7 @@ nav {
   color: whitesmoke;
   font-size: 18px;
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 .links a:before {
   content: "";
@@ -75,115 +84,128 @@ nav {
   visibility: visible;
   transform: scaleX(1);
 }
-.menuButton {
-  cursor: pointer;
-  display: none;
-}
+
 header p {
   width: 40%;
   color: whitesmoke;
   position: absolute;
-  top: 57%;
-  left: 53%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 5%;
   font-size: 24px;
 }
-/* All Bots Section */
-section {
-  margin-top: 30px;
-}
-section a {
-  text-decoration: none;
-}
-section h2 {
-  text-align: center;
+
+/* Article */
+
+#about {
   color: #2b8a3e;
+  text-align: center;
+  margin: 30px 0px;
   font-size: 32px;
 }
-.allBots {
-  padding: 15px;
-  width: 70%;
-  border-radius: 30px;
-  margin: 25px auto;
-  row-gap: 10px;
-  column-gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
-.allBots span:first-child {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #2b8a3e;
-}
-.allBots svg {
-  margin: 10px auto;
-  border-radius: 20px;
-}
-.allBots span:last-child {
-  text-align: center;
-  font-size: 20px;
-  color: black;
-}
-.botImage {
-  width: 100px;
-  height: 100px;
-  align-self: center;
-  color: #2b8a3e;
-}
 
-.botInner {
-  display: grid;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  height: max-content;
-  /* border: 2px solid black; */
-  box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.066);
-  border-radius: 30px;
-}
-
-section a:hover {
-  opacity: 0.85;
-  box-shadow: 10px 10px 10px 0.7px rgba(0, 0, 0, 0.066);
-  border-radius: 30px;
-}
-
-/* Artice Section */
 article {
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 10px;
-  line-height: 1.5;
-  font-size: 18px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
-article p span {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-article h2 {
-  text-align: center;
-  font-size: 32px;
-  margin: 10px 0;
-  color: #2b8a3e;
+
+article p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-/* Footer */
+.medicine-pic-with-content,
+.vaccine-with-content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 300px;
+}
+
+.search {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  /* height: 100vh; */
+}
+.input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.input-field {
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid #2b8a3e;
+  font-size: 20px;
+}
+
+.history,
+.clearhistory,
+.input-search-btn {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #b2f2bb;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.history:hover,
+.clearhistory:hover,
+.input-search-btn:hover {
+  border: none;
+  background-color: #69db7c;
+}
+.output-field {
+  width: 100%;
+}
+
+.answer-fetch-field {
+  width: 100%;
+  height: 500px;
+  box-shadow: 10px 10px 30px 0.5px rgba(0, 0, 0, 0.103);
+  padding: 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  position: relative;
+  margin: 30px 0;
+  line-height: 1.3;
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-y: scroll; /* Show scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;
+}
+.answer-fetch-field::-webkit-scrollbar {
+  display: none;
+}
+
+.loader {
+  width: 100px;
+  position: absolute;
+  height: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.hidden {
+  display: none;
+}
+
 footer {
   margin: 5px;
   text-align: center;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 820px) {
   /* Links hovering */
   nav .links a:before {
     all: unset;
@@ -206,20 +228,24 @@ footer {
   nav {
     position: fixed;
     top: 0;
-    background-color: #862e9c;
     width: 100%;
-  }
-  /* Section */
-  section h2,
-  article h2,
-  article p span {
-    color: #862e9c;
+    background-color: #1098ad;
+    z-index: 100;
   }
   .upArrow {
-    background-color: #862e9c;
+    background-color: #1098ad;
   }
-  section,
+  .buttonsDiv button {
+    background-color: #3bc9db;
+  }
+  .buttonsDiv button:hover {
+    background-color: #99e9f2;
+  }
   #about {
+    color: #1098ad;
+  }
+  #about,
+  #searchSectionStoper {
     padding-top: 44px;
   }
   nav .links {
@@ -229,7 +255,7 @@ footer {
     right: 0;
     top: 100%;
     overflow-y: auto;
-    background-color: #862e9c;
+    background-color: #1098ad;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     z-index: 10;
@@ -247,19 +273,30 @@ footer {
   }
   header {
     background-image: none;
-    background-color: #862e9c;
     height: max-content;
     position: relative;
   }
   .menuButton {
     display: block;
   }
-  .allBots {
+  .input {
+    display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
   }
-  .allBots a .botInner span:first-child {
-    color: #9c36b5;
+  .buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
   }
+  .input-field {
+    grid-column: 1/-1;
+    width: 70%;
+    justify-self: center;
+  }
+
   footer {
     font-size: 15px;
   }

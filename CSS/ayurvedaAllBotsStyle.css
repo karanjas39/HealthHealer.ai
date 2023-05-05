@@ -9,12 +9,8 @@
 }
 /* New added container and result */
 body {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.336),
-      rgba(255, 255, 255, 0.073)
-    ),
-    url("./IMAGES/pexels-vanessa-loring-5965654.jpg");
-  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.086), rgba(0, 0, 0, 0.07)),
+    url("./IMAGES/a.jpg");
   background-size: cover;
   background-attachment: fixed;
   overflow-y: auto;
@@ -33,7 +29,9 @@ body {
   align-content: center;
   border: 1px solid white;
   padding: 20px;
-  margin: 10px auto;
+  margin: 0 auto;
+  /* background-color: #eeeeeedd; */
+  margin-bottom: 10px;
 }
 .loader {
   position: absolute;
@@ -44,7 +42,8 @@ body {
 }
 nav {
   top: 0;
-  width: 80%;
+  width: 100%;
+  padding: 10px;
   height: 50px;
   display: flex;
   margin: 0 auto;
@@ -52,6 +51,10 @@ nav {
   align-items: center;
   z-index: 10;
   margin-bottom: 30px;
+  /* background-color: #eeeeeedd; */
+}
+.menuButton {
+  display: none;
 }
 .website-name {
   font-size: 26px;
@@ -68,6 +71,7 @@ nav {
   color: black;
   font-size: 18px;
   position: relative;
+  padding-bottom: 3px;
 }
 .links a:before {
   content: "";
@@ -90,13 +94,14 @@ nav {
 }
 
 /* Different for all */
-.chat-container-1 {
+.chat-container {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid white;
   border-radius: 5px;
   border-radius: 30px;
+  /* background-color: #eeeeeedd; */
 }
 
 .chat-header {
@@ -169,5 +174,67 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
+
+  .result {
+    width: 90%;
+    background-color: transparent;
+  }
+  nav {
+    width: 100%;
+    background-color: #1098ad;
+  }
+  .website-name,
+  nav .links a {
+    color: whitesmoke;
+  }
+  body {
+    background-image: none;
+    background-color: #c5f6fa;
+  }
+  .chat-container {
+    background-color: transparent;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  nav {
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .links {
+    position: absolute;
+    width: max-content;
+    flex-direction: column;
+    background-color: #1098ad;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    z-index: 100;
+    box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.127);
   }
 }

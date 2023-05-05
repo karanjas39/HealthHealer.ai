@@ -66,6 +66,7 @@ nav {
   color: whitesmoke;
   font-size: 18px;
   position: relative;
+  padding-bottom: 3px;
 }
 .links a:before {
   content: "";
@@ -205,6 +206,21 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 860px) {
+  /* Links hovering */
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
   /* Header */
   .website-name {
     font-size: 20px;

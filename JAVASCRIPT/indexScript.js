@@ -14,7 +14,7 @@ function nextSlide() {
 }
 // nextSlide();
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 4000);
 
 // Add click event listeners to all the navigation links
 navLinks.forEach(function (link) {
@@ -92,4 +92,7 @@ function clearForm() {
 
 function goToLink() {
   window.open("https://www.youtube.com/watch?v=TE3rFhg0RdQ", "_blank");
+}
+function getApiKey() {
+  window.open("https://platform.openai.com/account/api-keys", "_blank");
 }

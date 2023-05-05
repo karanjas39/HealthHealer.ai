@@ -13,7 +13,7 @@ body {
       rgba(255, 255, 255, 0.336),
       rgba(255, 255, 255, 0.073)
     ),
-    url("./IMAGES/pexels-vanessa-loring-5965654.jpg");
+    url("./IMAGES/workout_bots_background.jpg");
   height: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -32,7 +32,6 @@ body {
   padding: 10px;
   align-content: center;
   border: 1px solid white;
-  height: max-content;
   padding: 20px;
   margin: 10px auto;
 }
@@ -45,7 +44,8 @@ body {
 }
 nav {
   top: 0;
-  width: 80%;
+  width: 100%;
+  padding: 10px;
   height: 50px;
   display: flex;
   margin: 0 auto;
@@ -69,6 +69,7 @@ nav {
   color: black;
   font-size: 18px;
   position: relative;
+  padding-bottom: 3px;
 }
 .links a:before {
   content: "";
@@ -86,8 +87,17 @@ nav {
   visibility: visible;
   transform: scaleX(1);
 }
+.hidden {
+  display: none;
+}
 
-.chat-container-3 {
+.menuButton {
+  cursor: pointer;
+  display: none;
+}
+
+/* Different for all */
+.chat-container {
   max-width: 500px;
   margin: 0 auto;
   padding: 20px;
@@ -95,13 +105,13 @@ nav {
   border-radius: 5px;
   border-radius: 30px;
 }
+
 .chat-header {
   text-align: center;
   margin-bottom: 10px;
 }
-.hidden {
-  display: none;
-}
+
+/* Change Added */
 .chat-history {
   height: 300px;
   overflow-y: scroll;
@@ -112,6 +122,7 @@ nav {
 .chat-history::-webkit-scrollbar {
   display: none;
 }
+
 .chat-message {
   margin-bottom: 20px;
   clear: both;
@@ -166,5 +177,68 @@ nav {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  nav .links a:before {
+    all: unset;
+  }
+  nav .links a:hover::before {
+    all: unset;
+  }
+  nav .links a {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  nav .links a:hover {
+    transform: translateY(-5px);
+  }
+  body {
+    background-image: none;
+    background-color: #ffe8cc;
+  }
+  nav {
+    background-color: #e8590c;
+  }
+  nav .website-name,
+  nav .links a {
+    color: whitesmoke;
+  }
+  .result,
+  .chat-container-1 {
+    background-color: transparent;
+  }
+  .result {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .chat-container-1 {
+    width: 80%;
+  }
+  nav {
+    position: relative;
+  }
+  .menuButton {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .links {
+    position: absolute;
+    width: max-content;
+    flex-direction: column;
+    background-color: #e8590c;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    z-index: 100;
+    box-shadow: 10px 10px 10px 0.5px rgba(0, 0, 0, 0.127);
   }
 }
