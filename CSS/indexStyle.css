@@ -271,7 +271,11 @@ article p {
   margin: 0 auto;
   gap: 10px;
 }
-
+.ayurveda-tab {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
 .docter-tab,
 .diet-tab,
 .medicine-tab,
@@ -281,11 +285,6 @@ article p {
   align-items: center;
 }
 
-.ayurveda-tab {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-}
 .container img {
   height: 400px;
 }
