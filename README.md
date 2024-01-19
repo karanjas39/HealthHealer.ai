@@ -1,4 +1,6 @@
-# HealthHealer.ai https://karanjas39.github.io/HealthHealer.ai/
+# HealthHealer.ai
+
+https://healthhealerai.netlify.app/
 
 Welcome to HealthHealer.ai - Your all-in-one Healthcare platform powered by Artificial Intelligence!
 
