@@ -26,6 +26,7 @@
       property="og:url"
       content="https://karanjas39.github.io/HealthHealer.ai/"
     />
+    <link rel="shortcut icon" href="./CSS/IMAGES/doc.png" type="image/x-icon" />
     <link rel="stylesheet" href="./CSS/indexStyle.css" />
   </head>
   <body onload="openModal()">
@@ -290,7 +291,7 @@
         </div>
       </div>
 
-      <form name="submit-to-google-sheets">
+      <div class="contact-form">
         <input
           type="text"
           name="Name"
@@ -311,28 +312,19 @@
           rows="5"
         ></textarea
         ><br />
-        <button type="submit" onclick="clearForm()">Submit</button>
-        <p class="submitMessage">Message sent successfully</p>
-      </form>
+        <button class="contact-form-btn">Submit</button>
+        <p class="submitMessage hidden"></p>
+      </div>
     </section>
     <!-- Footer -->
     <footer>
-      Copyright &copy; 2023 <strong>HealthHealer.ai</strong>. All rights
-      reserved. | Powered by OPENAI | Developed by Jaskaran Singh
+      Copyright &copy; <span class="website-year"></span>
+      <strong>HealthHealer.ai</strong>. All rights reserved. | Powered by OPENAI
+      | Developed by
+      <a href="https://developerjaskaran.netlify.app/" target="_blank"
+        >Jaskaran Singh</a
+      >
     </footer>
-    <!-- Contact Form -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzcaCwoN3dza_ngLLMGbok2-EMiOCAtMfI2bTYVHkNH0_oQv0zrmuEgU7lF1aGxp8si/exec";
-      const form = document.forms["submit-to-google-sheets"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!"))
-          .catch((error) => console.error(error.message));
-      });
-    </script>
 
     <!-- Script -->
     <script src="./JAVASCRIPT/indexScript.js"></script>

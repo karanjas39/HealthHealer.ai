@@ -342,7 +342,7 @@ article p {
   resize: none;
 }
 
-form button {
+.contact-form button {
   padding: 5px 15px;
   border-radius: 20px;
   color: whitesmoke;
@@ -354,18 +354,21 @@ form button {
   margin-left: 5px;
   font-weight: 700;
 }
-form button:hover {
+.contact-form button:hover {
   background-color: #2f9e44;
 }
-form button:active {
+.contact-form button:active {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 .submitMessage {
   margin-top: 20px;
   font-size: 18px;
-  display: none;
   animation: fadeinout 5s;
   color: #74b816;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes fadeinout {
@@ -387,6 +390,16 @@ form button:active {
 footer {
   margin: 5px;
   text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #2b8a3e;
+  font-weight: bold;
+}
+
+footer a:active {
+  color: #2f9e44;
 }
 
 /* Media Queries */
